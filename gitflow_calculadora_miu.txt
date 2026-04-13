@@ -1,0 +1,51 @@
+# GitFlow Commands - Calculadora MiU
+
+# Inicialización
+git init
+git checkout -b develop
+
+# Commit inicial
+git add .
+git commit -m "Inicialización del proyecto Calculadora MiU con estructura base"
+
+# Feature: Menú principal
+git checkout -b feature/menu-principal
+git commit -m "Creación de index.php con menú principal"
+git commit -m "Implementación de navegación hacia módulos"
+git checkout develop
+git merge feature/menu-principal
+
+# Feature: Calculadora de cuotas
+git checkout -b feature/calculadora-cuotas
+git commit -m "Creación de función calcularCuotas"
+git commit -m "Formulario en cuotas.php"
+git checkout develop
+git merge feature/calculadora-cuotas
+
+# Feature: Calculadora de notas
+git checkout -b feature/calculadora-notas
+git commit -m "Función calc para notas"
+git commit -m "Formulario en notas.php"
+git checkout develop
+git merge feature/calculadora-notas
+
+# Feature: UI mejorada
+git checkout -b feature/ui-mejorada
+git commit -m "Estilos CSS y diseño mejorado"
+git checkout develop
+git merge feature/ui-mejorada
+
+# Hotfix
+git checkout -b hotfix/validaciones
+git commit -m "Corrección de validaciones"
+git checkout main
+git merge hotfix/validaciones
+git checkout develop
+git merge hotfix/validaciones
+
+# Release final
+git checkout -b release/v1.0
+git commit -m "Versión final del proyecto"
+git checkout main
+git merge release/v1.0
+git tag -a v1.0 -m "Versión final Calculadora MiU"
