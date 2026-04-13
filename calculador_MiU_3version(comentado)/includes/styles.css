@@ -1,0 +1,95 @@
+/* 
+Estilos generales del cuerpo de la página
+- Se usa la fuente 'Poppins' para un diseño moderno
+- Fondo con tono morado claro
+- Se elimina el margen por defecto del navegador
+- Texto centrado
+*/
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f3f0ff;
+    margin:0;
+    text-align:center;
+}
+
+/* 
+Contenedor principal
+- Agrega espacio superior para centrar el contenido verticalmente
+*/
+.container{
+    margin-top:50px;
+}
+
+/* 
+Tarjeta principal (card)
+- Fondo blanco para contraste
+- Ancho máximo de 400px (responsive)
+- Centrado automático
+- Bordes redondeados
+- Sombra suave para efecto moderno
+*/
+.card{
+    background:white;
+    max-width:400px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* 
+Campos de entrada (inputs)
+- Ocupan casi todo el ancho de la tarjeta
+- Espaciado interno para mejor usabilidad
+- Bordes redondeados
+- Borde gris claro
+*/
+input{
+    width:95%;
+    padding:10px;
+    margin:6px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* 
+Botones
+- Color principal morado
+- Texto blanco para contraste
+- Sin borde
+- Bordes redondeados
+- Ocupan todo el ancho del contenedor
+*/
+button{
+    background:#7e57c2;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    width:100%;
+}
+
+/* 
+Barra de progreso (contenedor)
+- Altura pequeña tipo indicador
+- Color de fondo gris claro
+- Bordes redondeados
+*/
+.progress{
+    height:10px;
+    background:#ddd;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+/* 
+Barra interna de progreso
+- Representa el avance en porcentaje
+- Color morado consistente con el diseño
+- Bordes redondeados
+*/
+.progress-bar{
+    height:10px;
+    background:#7e57c2;
+    border-radius:5px;
+}
